@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodRate | Beranda</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .navbar-brand {
+            font-weight: 600;
+        }
+        .nav-link {
+            font-weight: 500;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .lead {
+            font-size: 1.2rem;
+        }
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .profile-card {
+            transition: transform 0.3s ease;
+        }
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+        .img-fluid {
+            border-radius: 12px;
+        }
+        .form-control, .btn {
+            border-radius: 12px;
+        }
+        .btn-primary {
+            background-color: #4CAF50;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 1.5rem 0;
+            border-top: 2px solid #e0e0e0;
+        }
+        /* New Styles for Scrollable Area */
+        .scrollable-foods {
+            max-height: 400px; /* Set height for scroll */
+            overflow-y: auto; /* Enable vertical scroll */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">FoodRate</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top-foods">Makanan Teratas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#food-ratings">Nilai Makanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile-section">Tentang Kami</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Cari">
+                    <button class="btn btn-outline-success" type="submit">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="py-5 text-center bg-light">
+        <div class="container">
+            <h1 class="section-title">Makanan Terbaik di Makassar</h1>
+            <p class="lead">Platform ulasan makanan terbaik yang membantu Anda menemukan kuliner terenak di kota ini.</p>
+        </div>
+    </section>
+
+    <!-- Top Rated Food Section -->
+    <section id="top-foods" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Makanan Teratas</h2>
+            <div class="scrollable-foods d-flex justify-content-center mt-4 flex-column flex-md-row">
+                <div class="food-item text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Asset/OIP.jpeg" alt="Coto Makassar" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Coto Makassar</h5>
+                            <p class="card-text">⭐ 5.0 (5,234 Ulasan)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-item text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Asset/7fd7a90b-e700-425f-955a-7d8c24d6cb77.jpe" alt="Pallubasa" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Pallubasa</h5>
+                            <p class="card-text">⭐ 4.8 (4,123 Ulasan)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-item text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Asset/resep-sup-konro.width-800.format-webp.webp" alt="Konro" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Konro</h5>
+                            <p class="card-text">⭐ 4.7 (3,456 Ulasan)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-item text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Asset/th.jpeg" alt="Nasi Kuning" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Nasi Kuning</h5>
+                            <p class="card-text">⭐ 4.6 (2,345 Ulasan)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-item text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Asset/OIP (2).jpeg" alt="Sate" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Sate</h5>
+                            <p class="card-text">⭐ 4.5 (3,789 Ulasan)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Ratings Section -->
+    <section id="food-ratings" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Nilai Makanan</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coto Makassar</h5>
+                            <p class="card-text">Rating: ⭐ 5.0</p>
+                            <p class="card-text">Ulasan: "Sangat lezat dan kaya rasa!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pallubasa</h5>
+                            <p class="card-text">Rating: ⭐ 4.8</p>
+                            <p class="card-text">Ulasan: "Cita rasa yang unik dan menggugah selera."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Konro</h5>
+                            <p class="card-text">Rating: ⭐ 4.7</p>
+                            <p class="card-text">Ulasan: "Daging yang empuk dan bumbu yang pas."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nasi Kuning</h5>
+                            <p class="card-text">Rating: ⭐ 4.6</p>
+                            <p class="card-text">Ulasan: "Rasa gurih yang sempurna untuk sarapan."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sate</h5>
+                            <p class="card-text">Rating: ⭐ 4.5</p>
+                            <p class="card-text">Ulasan: "Sate yang lezat dan bumbu kacangnya mantap."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Previews Section -->
+    <section id="profile-section" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Tentang Kami</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card profile-card">
+                        <img src="" alt="Andi Siti Aulia" class="card-img-top img-fluid">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Andi Siti Aulia Akbar</h5>
+                            <p class="card-text">Web Developer | Mahasiswa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card profile-card">
+                        <img src="profile2.jpg" alt="Almughirah Ahmad Kalamor" class="card-img-top img-fluid">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Almughirah Ahmad Kalamor</h5>
+                            <p class="card-text">UI/UX Designer | Mahasiswa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card profile-card">
+                        <img src="profile3.jpg" alt="Alif Alfi Takdir" class="card-img-top img-fluid">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Alif Alfi Takdir</h5>
+                            <p class="card-text">Full Stack Developer | Mahasiswa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card profile-card">
+                        <img src="profile4.jpg" alt="Dahniar" class="card-img-top img-fluid">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dahniar</h5>
+                            <p class="card-text">Product Manager | Mahasiswa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Hubungi Kami</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Alamat Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">Komentar</label>
+                            <textarea class="form-control" id="comment" rows="3" placeholder="Masukkan komentar Anda"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 FoodRate. KELOMPOK 1.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

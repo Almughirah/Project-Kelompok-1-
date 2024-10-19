@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almughirah Ahmad Kalamor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000c7; /* Background hitam */
+            color: #fff; /* Teks putih */
+        }
+
+        .profile-section {
+            position: relative;
+            overflow: hidden;
+            background-color: #1b1a1a00; /* Gelap untuk section profil */
+            color: #e3b200; /* Warna teks untuk profil */
+            text-align: center;
+            padding: 50px 0;
+            margin-bottom: 50px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+            border: 5px solid #e3b000; /* Border kuning */
+        }
+
+        .profile-image:hover {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .info-card {
+            background: #333;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-left: 5px solid #f3f1f2;
+        }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+        }
+
+        .section-header {
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #e3b000;
+        }
+
+        table th {
+            width: 150px;
+            color: #d4001f;
+        }
+
+        .list-group-item {
+            transition: background-color 0.3s ease-in-out;
+            border: 1px solid #c5c5c5;
+            color: #fff;
+            background-color: #444;
+        }
+
+        .list-group-item:hover {
+            background-color: #bdaeb0;
+            color: white;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="video-background">
+            <video autoplay loop muted>
+                <source src="Video/porschem4.mp4" type="video/mp4"> <!-- Ganti dengan jalur video yang benar -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="container text-center">
+            <img src="Ghi.jpg" alt="Foto Mughirah" class="profile-image img-fluid">
+            <h2>Mughirah</h2>
+            <p>Mahasiswa Prodi Teknik Informatika Komputer | Universitas Negeri Makassar</p>
+            <p><strong>Motto:</strong> "Need Money For Porsche."</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- About Section -->
+        <h3 class="section-header text-center">Tentang Saya</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h5>Pengenalan Diri</h5>
+                    <table class="table table-borderless text-light">
+                        <tr>
+                            <th>NIM</th>
+                            <td>230209502085</td>
+                        </tr>
+                        <tr>
+                            <th>Kelas</th>
+                            <td>PTIK-H 23</td>
+                        </tr>
+                        <tr>
+                            <th>Alamat</th>
+                            <td>Jl. Andi Depu Parappe</td>
+                        </tr>
+                        <tr>
+                            <th>Sekolah Asal</th>
+                            <td>SMA NEGERI 1 CAMPALAGIAN</td>
+                        </tr>
+                        <tr>
+                            <th>Universitas</th>
+                            <td><a href="https://unm.ac.id/" target="_blank" class="link-warning">Universitas Negeri Makassar</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h5>Pengalaman Belajar Bootstrap</h5>
+                    <p>Mughi, seorang mahasiswa Informatika, menemukan framework front-end *Bootstrap* yang membuat websitenya lebih modern dan responsif dengan mudah. Setelah mencoba, ia berhasil membuat website dengan tampilan profesional hanya dalam waktu singkat. Bootstrap menjadi teman setia Mughi dalam proyek webnya.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Courses and Teachers Section -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h5>Mata Kuliah Yang Dipelajari</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">Pemrograman Web</li>
+                        <li class="list-group-item">Inovasi Teknologi</li>
+                        <li class="list-group-item">Kecerdasan Buatan</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h5>Daftar Dosen</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">Alifya NFH, S.Pd., M.Pd.</li>
+                        <li class="list-group-item">M. Miftach Fakhri, S.Kom., M.Pd.</li>
+                        <li class="list-group-item">Marwan Ramdhany Edy, S.Pd., M.Kom.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Backsound -->
+    <audio id="background-audio" autoplay loop>
+        <source src="Audio/Porschem3.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- JavaScript for unmuting audio on click -->
+    <script>
+        // Pastikan audio hanya dimainkan setelah interaksi pengguna
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('background-audio');
+            if (audio.muted) {
+                audio.muted = false;
+                audio.play();
+            }
+        });
+    </script>
+    
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-3 bg-dark text-light">
+        <p>&copy; 2024 Designed by Mughi</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
